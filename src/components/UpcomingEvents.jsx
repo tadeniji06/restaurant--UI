@@ -14,13 +14,13 @@ const UpcomingEvents = () => {
           Our Upcoming Events
         </span>
       </div>
-      <Card
+      {/* <Card
         className={
-          "absolute max-w-[1000px] h-[300px] inset-0 m-auto p-3"
+          "absolute  h-[300px] inset-0 m-auto p-3"
         }
       >
         <span>EVENTS</span>
-      </Card>
+      </Card> */}
     </section>
   );
 };

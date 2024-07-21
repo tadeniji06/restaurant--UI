@@ -7,6 +7,8 @@ import DiscoverMenu from "../components/DiscoverMenu";
 import UpcomingEvents from "../components/UpcomingEvents";
 import Reservation from "../components/Reservation";
 import LatestBlog from "../components/LatestBlog";
+import CustomerReview from "../components/CustomerReview";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -18,7 +20,9 @@ const Home = () => {
       <DiscoverMenu />
       <UpcomingEvents />
       <Reservation />
+      <CustomerReview />
       <LatestBlog />
+      <Footer />
     </div>
   );
 };

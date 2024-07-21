@@ -18,7 +18,7 @@ const Reservation = () => {
         </span>
       </div>
 
-      <section className='w-full h-[400px] shadow-md rounded-md flex p-5'>
+      <section className='w-full h-[450px] shadow-md rounded-md flex p-5'>
         <div className='flex flex-col md:grid grid-cols-2 gap-3 p-5 flex-1'>
           <div className='border border-slate-300 h-[50px] flex justify-center items-center '>
             <DatePicker
