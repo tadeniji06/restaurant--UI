@@ -9,6 +9,7 @@ import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
 import Card from "./Card";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -50,7 +51,11 @@ const NavBar = () => {
   return (
     <nav className='flex items-center justify-between w-full p-5'>
       {/* logo */}
-      <div className='font-bold cursor-progress'>Logo</div>
+      <Link to={'/'}>
+        <div className='font-bold cursor-pointer'>
+          Logo
+        </div>
+      </Link>
 
       {/* desktop links */}
       <ul className='hidden md:flex gap-[45px] list-none navbar-links'>
@@ -93,7 +98,10 @@ const NavBar = () => {
             ))}
           </ul>
           <div>
-            <Button title='Book a Table' className='mt-5 p-2 rounded-md bg-primaryRed text-white' />
+            <Button
+              title='Book a Table'
+              className='mt-5 p-2 rounded-md bg-primaryRed text-white'
+            />
           </div>
         </Card>
       )}
